@@ -1,0 +1,47 @@
+//Reset link styling
+a {
+  color: inherit;
+  text-decoration: none;
+  &:after {
+    content: "🔗";
+  }
+}
+p > a {
+  text-decoration: underline;
+}
+
+// Container
+body {
+  max-width: 60vw;
+  margin: auto;
+}
+
+// Link lists
+ul {
+  li {
+    &.active {
+      color: grey;
+      &:after {
+        content: "(this article)";
+      }
+    }
+  }
+}
+
+header,
+footer {
+  padding: 0.8em 0;
+}
+
+// Header
+header {
+  font-size: 1.4em;
+  nav {
+    a {
+      &:after {
+        content: "";
+      }
+      padding-right: 1em;
+    }
+  }
+}

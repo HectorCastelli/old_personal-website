@@ -3,10 +3,10 @@ exports.data = {
   layout: "index",
 };
 
-exports.render = function (data) {
+exports.render = (data) => {
   const mostRecentPostsExcludingSelf = data.collections.post
     .reverse()
-    .filter((p) => data.page.url !== p.url)
+    //.filter((p) => data.page.url !== p.url)
     .slice(0, 3);
 
   return `<main>

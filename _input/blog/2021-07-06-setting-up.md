@@ -19,7 +19,7 @@ The design goals and the objectives from my website from two years ago (2019) an
 
 I believe the web has become bloated. A lot of effort and energy is being pumped into making UIs that are flashy, shiny and super dynamic, while other, more energy conscious means exist that satisfy the requirements (convey information, serve as a point of reference for all things "me").
 
-At the same time, the widespread usage of pictographs to expand written language has made text even more powerful. Adding emotion and conveying intonation and intention has become much easier.
+At the same time, the widespread usage of pictographs to expand written language has made text even more powerful. Adding emotion and conveying intonation and intention has become much easier. _Great_ 💃
 
 These trends make me believe that there is no longer a need for personal blogs to be over-engineered. Text, pictographs and some images are enough to convey most of the content. Plus, they are easier to check for adaptability and accessibility.
 

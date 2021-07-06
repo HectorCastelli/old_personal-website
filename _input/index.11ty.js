@@ -6,7 +6,7 @@ exports.data = {
   layout: "index",
 };
 
-exports.render = function (data) {
+exports.render = (data) => {
   const mostRecentArticles = data.collections.post.reverse().slice(0, 5);
 
   return `<main>

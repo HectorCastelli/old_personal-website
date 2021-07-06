@@ -1,5 +1,4 @@
-module.exports = function (data, collection) {
-  return `<ul>
+module.exports =  (data, collection) => `<ul>
     ${collection
       .map(
         (i) =>
@@ -10,5 +9,4 @@ module.exports = function (data, collection) {
     </li>`
       )
       .join("\n")}
-  </ul>`;
-};
+  </ul>`
