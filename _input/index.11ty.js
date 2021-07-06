@@ -7,11 +7,18 @@ exports.data = {
 };
 
 exports.render = function (data) {
-  return `# Welcome
+  const mostRecentArticles = data.collections.post.reverse().slice(0, 5);
+
+  return `<main>
+  
+  # Welcome
   
   It is my pleasure to welcome you into my website.
+
+  This site is mostly a way for me to share my ramblings about things that interest me,
+  as well as centralize some information regarding myself.
   
   # Recent articles:
-  ${collectionList(data, data.collections.post)}
-  `;
+  ${collectionList(data, mostRecentArticles)}
+  </main>`;
 };

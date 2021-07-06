@@ -11,7 +11,12 @@ exports.render = function (data) {
     <title>${data.title}</title>
   </head>
   <body>
+    <header>
+    </header>
     ${data.content}
+    <footer>
+      <p>©Copyright ${new Date().getFullYear()} by Hector Castelli Zacharias. All rights reversed.</p>
+    </footer>
   </body>
 </html>`;
 };
