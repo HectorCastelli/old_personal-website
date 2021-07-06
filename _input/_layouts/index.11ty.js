@@ -3,7 +3,7 @@ exports.data = {
 };
 
 exports.render = function (data) {
-  return `<!doctype html>
+  return `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
