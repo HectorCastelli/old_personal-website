@@ -9,6 +9,16 @@ a {
 p > a {
   text-decoration: underline;
 }
+nav {
+  a {
+    &:after {
+      content: "";
+    }
+  }
+  span.disabled {
+    color: grey;
+  }
+}
 
 // Container
 body {

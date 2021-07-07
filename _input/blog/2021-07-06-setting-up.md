@@ -1,5 +1,5 @@
 ---
-tags: post
+tags: ["post", "web"]
 title: Setting up a new website
 ---
 

@@ -1,7 +1,9 @@
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
+  eleventyConfig.addPlugin(inclusiveLangPlugin, {
+    templateFormats: ["md", "html", "js"],
+  });
 
   eleventyConfig.addWatchTarget("./_input/styles/");
 

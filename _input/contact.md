@@ -21,4 +21,4 @@ or my LinkedIn profile: [in/hectorzacharias](https://linkedin.com/in/hectorzacha
 - How long do you usually take to respond?
   - It depends on the message, when it arrives and what is happening on my life. Normally, I respond to messages within 24 hours.
 - Can I contact you about a professional opportunity?
-  - Of course, although I am not really looking for new challenges at the moment.
+  - Yes, although I am not really looking for new challenges at the moment.
