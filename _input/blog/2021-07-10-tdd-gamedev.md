@@ -1,5 +1,5 @@
 ---
-tags: ["post", "gamedev"]
+tags: ["draft", "gamedev"]
 title: Leveraging automated tests for game development
 ---
 
