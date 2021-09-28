@@ -16,10 +16,10 @@ exports.render = (data) => {
   <body>
     <header>
       <nav>
-        <a href="/">Home 🏠</a>
-        <a href="/about-me">About Me 👨🏻</a>
-        <a href="/contact">Contact Info 📧</a>
-        <a href="/blog">My Blog 📚</a>
+        <a href="/">Home</a>
+        <a href="/about-me">About Me</a>
+        <a href="/contact">Contact Info</a>
+        <a href="/blog">My Blog</a>
       </nav>
     </header>
     ${data.content}
