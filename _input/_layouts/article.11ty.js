@@ -14,7 +14,7 @@ exports.render = (data) => {
       ${data.content}
     </article>
   </main>
-  <nav>
+  <nav class="continue-reading">
     <h1>Continue reading</h1>
     <p>Here are some more articles that you could read next:</p>
     ${
