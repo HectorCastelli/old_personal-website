@@ -1,5 +1,5 @@
 ---
-tags: ["post", "general", "self"]
+tags: ["post", "career", "self"]
 title: A framework for performance tracking
 ---
 

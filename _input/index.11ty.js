@@ -11,7 +11,7 @@ exports.render = (data) => {
 
   return `<main>
   
-  # Welcome
+  # Welcome!
   
   It is my pleasure to welcome you into my website.
 
