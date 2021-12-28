@@ -16,16 +16,14 @@ exports.data = {
 exports.render = (data) => {
   const paginatedArticles = data.pagination;
 
-  return `<main>
-  
+  return `
   # My Articles
 
   Here is a list of my articles, in reverse chronological order (newest first):
 
   ${collectionList(data, paginatedArticles.items, renderArticleWithTopics)}
   ${collectionPagination(data.pagination)}
-
-  </main>`;
+  `;
 };
 
 const renderArticleWithTopics = (item, isCurrentPage) => `<li ${

@@ -9,11 +9,10 @@ exports.render = (data) => {
     .filter((p) => data.page.url !== p.url)
     .slice(0, 3);
 
-  return `<main id="main-content">
-    <article>
-      ${data.content}
-    </article>
-  </main>
+  return `
+  <article>
+    ${data.content}
+  </article>
   <nav class="continue-reading">
     <h1>Continue reading</h1>
     <p>Here are some more articles that you could read next:</p>

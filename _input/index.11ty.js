@@ -9,8 +9,7 @@ exports.data = {
 exports.render = (data) => {
   const mostRecentArticles = data.collections.post.reverse().slice(0, 5);
 
-  return `<main id="main-content">
-  
+  return `
   # Welcome!
   
   It is my pleasure to welcome you into my website.
@@ -20,5 +19,5 @@ exports.render = (data) => {
   
   # Recent articles:
   ${collectionList(data, mostRecentArticles)}
-  </main>`;
+  `;
 };

@@ -24,7 +24,9 @@ exports.render = (data) => {
         <a href="/blog">My Blog</a>
       </nav>
     </header>
-    ${data.content}
+    <main id="main-content">
+      ${data.content}
+    </main>
     <footer>
       <p>© Copyright ${new Date().getFullYear()} by Hector Castelli Zacharias. All rights reserved.</p>
     </footer>
