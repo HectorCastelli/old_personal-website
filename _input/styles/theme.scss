@@ -5,7 +5,8 @@ a {
   &:after {
     content: "⤴";
   }
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }
