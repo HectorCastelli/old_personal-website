@@ -9,7 +9,7 @@ exports.data = {
 exports.render = (data) => {
   const mostRecentArticles = data.collections.post.reverse().slice(0, 5);
 
-  return `<main>
+  return `<main id="main-content">
   
   # Welcome!
   

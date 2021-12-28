@@ -9,7 +9,7 @@ exports.render = (data) => {
     .filter((p) => data.page.url !== p.url)
     .slice(0, 3);
 
-  return `<main>
+  return `<main id="main-content">
     <article>
       ${data.content}
     </article>

@@ -81,3 +81,17 @@ p {
     font-size: small;
   }
 }
+
+//Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+//Skip to content link
+.skip-to-content {
+  position: absolute;
+  transform: translateY(-120%);
+  &:focus {
+    transform: translateY(0);
+  }
+}

@@ -1,3 +1,4 @@
+const skipToContent = require("../_components/skip-to-content");
 const styles = require("../_components/styles");
 
 exports.data = {
@@ -14,6 +15,7 @@ exports.render = (data) => {
     ${styles()}
   </head>
   <body>
+    ${skipToContent()}
     <header>
       <nav>
         <a href="/">Home</a>
