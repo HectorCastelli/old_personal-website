@@ -1,0 +1,17 @@
+---
+interface Props {
+    links: {
+        text: string;
+        href: URL;
+    }[];
+}
+
+const { links } = Astro.props;
+---
+
+<footer>
+    <p>All rights reserved.</p>
+    <nav>
+        {links.map((link) => <a href={link.href}>{link.text}</a>)}
+    </nav>
+</footer>

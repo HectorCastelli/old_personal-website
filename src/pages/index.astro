@@ -1,7 +1,41 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro"
 ---
+
 <BaseLayout>
+	<Header
+		links={[
+			{
+				text: "About Me",
+				href: new URL("http://a.b"),
+			},
+			{
+				text: "Projects",
+				href: new URL("http://a.b"),
+			},
+			{
+				text: "Blog",
+				href: new URL("http://a.b"),
+			},
+			{
+				text: "Contact",
+				href: new URL("http://a.b"),
+			},
+		]}
+	/>
 	<h1>Hello!</h1>
+	<Footer
+		links={[
+			{
+				text: "Homepage",
+				href: new URL("http://a.b"),
+			},
+			{
+				text: "Feed",
+				href: new URL("http://a.b"),
+			},
+		]}
+		/>
 </BaseLayout>
