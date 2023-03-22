@@ -1,0 +1,13 @@
+---
+import type { MarkdownInstance } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const allPosts = await Astro.glob("../../posts/*.md");
+const tags = [...new Set(allPosts.flatMap((post) => post.frontmatter.tags))]
+---
+<BaseLayout>
+    <h1>Here are all the tags:</h1>
+    <ol>
+        {tags.map(tag=><li><a href={`tags/${tag}`}>{tag}</a></li>)}
+    </ol>
+</BaseLayout>
