@@ -1,0 +1,32 @@
+---
+import type { MarkdownInstance } from "astro";
+
+const allPosts = await Astro.glob("../posts/*.md");
+
+export function getTopThreeTags(
+    allPosts: MarkdownInstance<Record<string, any>>[]
+): string[] {
+    const tagsWithCounts: Record<string, number> = allPosts
+        .flatMap((post) => post.frontmatter.tags)
+        .reduce((acc, tag) => {
+            acc[tag] = acc[tag] ? acc[tag] + 1 : 1;
+            return acc;
+        }, {});
+    return Object.keys(tagsWithCounts)
+        .sort((a: string, b: string) => tagsWithCounts[b] - tagsWithCounts[a])
+        .slice(0,3);
+}
+
+const tags = getTopThreeTags(allPosts);
+---
+
+<ul>
+    {
+        tags.map((tag) => (
+            <li>
+                <a href={`/tags/${tag}`}>{tag}</a>
+            </li>
+        ))
+    }
+    <li>and <a href="/tags">more</a>!</li>
+</ul>

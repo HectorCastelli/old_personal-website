@@ -1,4 +1,5 @@
 ---
+import TagCloud from "../components/TagCloud.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
@@ -10,16 +11,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			I am a software thing-maker that enjoys the craft, as well as some
 			other topics, such as:
 		</p>
-		<ul>
-			<!--
-				TODO: Create this section dynamically based on the blogpost keywords,
-				weighting with the count of each page per-keyword.
-			-->
-			<li>Games</li>
-			<li>Narrative</li>
-			<li>Tooling</li>
-			<li>and more!</li>
-		</ul>
-		<p>If you are interested, feel free to read <a href="/blog">my blog</a>.</p>
+		<TagCloud/>
+		<p>Also, while you are here, feel free to read <a href="/blog">my blog</a>.</p>
 	</main>
 </BaseLayout>
