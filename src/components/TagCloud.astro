@@ -14,19 +14,26 @@ export function getTopThreeTags(
         }, {});
     return Object.keys(tagsWithCounts)
         .sort((a: string, b: string) => tagsWithCounts[b] - tagsWithCounts[a])
-        .slice(0,3);
+        .slice(0, 3);
 }
 
 const tags = getTopThreeTags(allPosts);
 ---
 
-<ul>
+<ul class="flex align-middle justify-between text-2xl">
     {
-        tags.map((tag) => (
+        tags.map((tag, index) => (
             <li>
-                <a href={`/tags/${tag}`}>{tag}</a>
+                <a
+                    href={`/tags/${tag}`}
+                    class="text-cyan-900 hover:text-cyan-700"
+                >
+                    {tag}
+                </a>
             </li>
         ))
     }
-    <li>and <a href="/tags">more</a>!</li>
+    <li>
+        and <a href="/tags" class="text-cyan-900 hover:text-cyan-700">more</a>!
+    </li>
 </ul>
