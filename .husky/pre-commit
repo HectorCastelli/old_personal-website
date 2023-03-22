@@ -1,6 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-npx lint-staged
-npm run build
-npx html-validate --config .htmlvalidate.json --ext html _site
