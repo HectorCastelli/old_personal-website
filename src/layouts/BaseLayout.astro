@@ -1,0 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+
+const { title } = Astro.props.frontmatter || Astro.props;
+
+import Config from "../config";
+const { author, description, keywords } = Config;
+---
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <BaseHead
+            title={title}
+            author={author}
+            description={description}
+            keywords={keywords}
+        />
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

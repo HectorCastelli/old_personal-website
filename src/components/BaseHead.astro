@@ -1,0 +1,16 @@
+---
+interface Props {
+    title: string;
+    author: string;
+    description: string;
+    keywords?: string[];
+}
+
+const { title, author, description, keywords } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<title>{title}</title>
+<meta name="author" content={author} />
+<meta name="description" content={description} />
+{keywords && <meta name="keywords" content={keywords?.join(", ")} />}

@@ -1,6 +1,10 @@
 {
   "name": "personal-website",
   "type": "module",
+  "author": {
+    "name": "Hector Castelli Zacharias",
+    "email": "hector.zacharias@gmail.com"
+  },
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
