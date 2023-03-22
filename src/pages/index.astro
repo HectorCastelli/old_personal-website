@@ -1,41 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro"
 ---
 
 <BaseLayout>
-	<Header
-		links={[
-			{
-				text: "About Me",
-				href: new URL("http://a.b"),
-			},
-			{
-				text: "Projects",
-				href: new URL("http://a.b"),
-			},
-			{
-				text: "Blog",
-				href: new URL("http://a.b"),
-			},
-			{
-				text: "Contact",
-				href: new URL("http://a.b"),
-			},
-		]}
-	/>
-	<h1>Hello!</h1>
-	<Footer
-		links={[
-			{
-				text: "Homepage",
-				href: new URL("http://a.b"),
-			},
-			{
-				text: "Feed",
-				href: new URL("http://a.b"),
-			},
-		]}
-		/>
+	<main class="max-w-screen-xl mx-auto">
+		<h3>Welcome to my personal website!</h3>
+		<h1>I am Hector.</h1>
+		<p>
+			I am a software thing-maker that enjoys the craft, as well as some
+			other topics, such as:
+		</p>
+		<ul>
+			<!--
+				TODO: Create this section dynamically based on the blogpost keywords,
+				weighting with the count of each page per-keyword.
+			-->
+			<li>Games</li>
+			<li>Narrative</li>
+			<li>Tooling</li>
+			<li>and more!</li>
+		</ul>
+		<p>If you are interested, feel free to read <a href="/blog">my blog</a>.</p>
+	</main>
 </BaseLayout>
